@@ -10,7 +10,7 @@ const PORT = 5000
 const apiRoutes = require('./routes/review')
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "*" }))
+app.use(cors({ origin: "https://moengage-brewery-r-kamalnath.onrender.com" }))
 connectTOMongoDB(mongoURI)
 
 app.get("/",(req,res)=>{
